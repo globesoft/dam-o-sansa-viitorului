@@ -1,0 +1,7 @@
+parameters:
+#    dam_o_sansa.example.class: GlobeSoft\DamOSansaViitoruluiBundle\Example
+
+services:
+#    dam_o_sansa.example:
+#        class: %dam_o_sansa.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

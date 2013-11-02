@@ -1,0 +1,4 @@
+dam_o_sansa:
+    resource: "@DamOSansaBundle/Resources/config/routing.yml"
+    prefix:   /
+
