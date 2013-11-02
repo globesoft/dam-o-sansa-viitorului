@@ -21,8 +21,12 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "jquery/jquery": "1.9.*",
         "leafo/lessphp": "dev-master",
-        "mopa/bootstrap-bundle": "v3.0.0-beta2",
-        "twbs/bootstrap": "v3.0.0"
+        "mopa/bootstrap-bundle": "dev-master",
+        "twbs/bootstrap": "dev-master",
+        "knplabs/knp-paginator-bundle": "dev-master",
+        "knplabs/knp-menu-bundle": "dev-master",
+        "knplabs/knp-menu": "2.0.*@dev",
+        "craue/formflow-bundle": "dev-master"
     },
     "repositories": [
         {
