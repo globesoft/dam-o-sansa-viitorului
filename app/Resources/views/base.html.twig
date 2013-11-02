@@ -1,3 +1,24 @@
 {% extends 'MopaBootstrapBundle::base.html.twig' %}
 
+{% block head_style %}
+    {{ parent() }}
+
+    <link href="{{ asset("bundles/mopabootstrap/bootstrap/dist/css/bootstrap.css") }}" type="text/css" rel="stylesheet" media="screen" />
+    <link href="{{ asset("bundles/mopabootstrap/bootstrap/dist/css/bootstrap.min.css") }}" type="text/css" rel="stylesheet" media="screen" />
+    <link href="{{ asset("css/application.css") }}" type="text/css" rel="stylesheet" media="screen" />
+{% endblock %}
 {% block title %}Asociația Dăm O Șansă Viitorului{% endblock %}
+
+{% block body %}
+<div class="container">
+    {% include '@DamOSansa/Content/header.html.twig' %}
+
+    <div class="row">
+        <div class="col-md-8 page-content">{% block content %}{% endblock %}</div>
+        <div class="col-md-3 text-center col-md-push-1 sidebar" role="navigation">{% include '@DamOSansa/Content/sidebar.html.twig' %}</div>
+    </div>
+
+    {% include '@DamOSansa/Content/footer.html.twig' %}
+
+</div> <!-- /container -->
+{% endblock %}

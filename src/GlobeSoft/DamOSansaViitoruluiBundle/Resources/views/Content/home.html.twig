@@ -1,5 +1,37 @@
 {% extends '::base.html.twig' %}
 
-{% block body %}
-    <img src="{{ asset('images/logo.svg') }}" />
+
+{% block content %}
+    <div class="homepage-image">
+        <img class="img-responsive img-thumbnail" src="http://placehold.it/960x441">
+    </div>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1>Împreună, dăm o șansă viitorului!</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Află cum te putem ajuta!</a></p>
+    </div>
+
+    <!-- Example row of columns -->
+    <div class="row text-center">
+        <div class="col-lg-4">
+            <img class="img-responsive img-thumbnail" src="http://placehold.it/150x150">
+            <h2>Subtitlu 1</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-primary" href="#" role="button">Află mai multe &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+            <img class="img-responsive img-thumbnail" src="http://placehold.it/150x150">
+            <h2>Subtitlu 2</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-primary" href="#" role="button">Află mai multe &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+            <img class="img-responsive img-thumbnail" src="http://placehold.it/150x150">
+            <h2>Subtitlu 3</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-primary" href="#" role="button">Află mai multe &raquo;</a></p>
+        </div>
+    </div>
 {% endblock %}
