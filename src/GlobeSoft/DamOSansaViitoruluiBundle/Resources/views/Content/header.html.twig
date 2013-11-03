@@ -1,19 +1,21 @@
 {% block header %}
 <div class="masthead">
     <div class="row header-images">
-        <img class="col-md-8 img-responsive" src="{{ asset('images/logo.svg') }}">
+        <a href="{{ path('homepage') }}"><img class="col-md-8 img-responsive" src="{{ asset('images/logo.svg') }}"></a>
         <img class="col-md-4 img-responsive img-rounded" src="http://placehold.it/350x120">
 
         {#<div class="clearfix"></div>#}
     </div>
 
+    {% set currentPath = path(app.request.attributes.get('_route')) %}
+
     <div class="row">
         <ul class="nav nav-justified">
-            <li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i> Acasă</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-briefcase"></i> Terapie</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-user"></i> Dizabilități</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Parteneri</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-envelope"></i> Contact</a></li>
+            <li {% if 'home' in currentPath %} class="active" {% endif %}><a href="{{ path('homepage') }}"><i class="glyphicon glyphicon-home"></i> Acasă</a></li>
+            <li {% if 'therapy' in currentPath %} class="active" {% endif %}><a href="{{ path('therapy') }}"><i class="glyphicon glyphicon-briefcase"></i> Terapie</a></li>
+            <li {% if 'dissability' in currentPath %} class="active" {% endif %}><a href="#"><i class="glyphicon glyphicon-user"></i> Dizabilități</a></li>
+            <li {% if 'partners' in currentPath %} class="active" {% endif %}><a href="#"><i class="glyphicon glyphicon-globe"></i> Parteneri</a></li>
+            <li {% if 'contact' in currentPath %} class="active" {% endif %}><a href="#"><i class="glyphicon glyphicon-envelope"></i> Contact</a></li>
         </ul>
     </div>
 </div>

@@ -10,4 +10,21 @@ class ContentController extends Controller {
     public function homeAction() {
         return $this->render('@DamOSansa/Content/home.html.twig');
     }
+
+    /**
+     * List all types of available therapy or provide more information about a single one.
+     * @param string $type The therapy type that more information should be provided on.
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function therapyAction($type = 'all') {
+        if ($type == 'all') {
+            return $this->render('@DamOSansa/Therapy/list.html.twig');
+        } else {
+            $type = ucfirst(str_replace('-',' ', $type));
+
+            return $this->render('@DamOSansa/Therapy/item.html.twig', array(
+                'type' => $type
+            ));
+        }
+    }
 }

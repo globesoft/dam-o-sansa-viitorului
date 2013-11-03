@@ -1,0 +1,36 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Terapie {{ type }} | {{ parent() }}{% endblock %}
+
+{% block content %}
+    <ol class="breadcrumb">
+        <li><a href="{{ path('homepage') }}">Acasă</a></li>
+        <li><a href="{{ path('therapy') }}">Terapie</a></li>
+        <li class="active">{{  type }}</li>
+    </ol>
+
+
+    <h1>Terapie {{ type }}</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum arcu quis odio varius viverra. Etiam placerat commodo lectus, a consequat lorem mattis et. Nulla facilisi. Phasellus in sodales sapien. Ut urna metus, sagittis non ligula vitae, mollis tincidunt est. Nam diam odio, molestie eget augue quis, ultricies vestibulum sem. Aliquam nec velit vulputate quam bibendum cursus. </p>
+    <p>Nulla facilisi. Nulla sollicitudin laoreet suscipit. Pellentesque quis diam sed ipsum vehicula dignissim. Suspendisse sollicitudin diam turpis. Pellentesque at massa feugiat, vulputate nisl vel, adipiscing leo. Ut dapibus eu odio sit amet vestibulum. Duis et porttitor purus. Aliquam facilisis ornare nisi ut tempor. Sed semper, neque ac imperdiet consectetur, est lectus aliquet tellus, consectetur condimentum dolor sapien ac risus. Fusce eu nisi lacus. Maecenas varius molestie mauris, sed porttitor nunc dapibus quis. Nam dapibus orci lorem. Vestibulum ornare diam vel tincidunt luctus. Pellentesque accumsan lacus iaculis elit pellentesque convallis. Duis id faucibus metus. </p>
+
+    <img class="img-responsive img-thumbnail" src="http://placehold.it/960x441">
+
+    <h2>Subtitlu</h2>
+    <p>Curabitur sit amet mi eu sem pretium feugiat id in velit. Donec a odio fermentum, scelerisque tellus vitae, feugiat tortor. Suspendisse potenti. Maecenas tincidunt odio vitae elementum facilisis. Duis ut eros dolor. Duis eleifend turpis nec arcu aliquet, ac dignissim urna dignissim. Duis cursus neque ac mauris sagittis, sit amet iaculis dolor semper. Sed a odio sed tortor pellentesque dignissim. Nam tempus ultrices ante, mattis imperdiet diam gravida dictum.</p>
+
+    <h3>Etapele</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, perferendis voluptas. Blanditiis consectetur enim, exercitationem in ipsam modi nobis obcaecati odit placeat possimus quaerat, quidem unde velit? Eum, tenetur, ullam.</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+
+    <h2>Alt subtitlu</h2>
+    <p>Maecenas vitae lorem sit amet augue dictum tristique. Nam non hendrerit risus, vel interdum justo. Cras eu lorem odio. Fusce feugiat molestie nulla, quis sodales massa euismod vel. Aenean id convallis mauris. Ut sodales erat eu massa vestibulum, eget posuere turpis fermentum. Aliquam sed sollicitudin eros. Aenean quis luctus dui. Phasellus elit est, facilisis sed libero a, adipiscing pulvinar risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam blandit diam vitae nisi gravida, eget adipiscing velit ultrices. Morbi ac sagittis purus. Maecenas eget mi urna. Duis neque felis, tempor sed ante ut, dapibus dapibus enim. Phasellus nec elit adipiscing, feugiat ante ac, tincidunt orci. Proin purus leo, pretium sed ultricies eu, viverra a ante.</p>
+    <p>Vivamus magna sapien, eleifend eleifend venenatis sit amet, convallis vel lectus. Sed luctus sollicitudin ipsum. Vivamus volutpat viverra velit nec sagittis. Duis commodo arcu sit amet aliquam lacinia. Fusce luctus porta quam et mattis. Duis bibendum nulla mi, eu congue orci euismod non. Sed lacinia nisl diam, ut faucibus mauris pretium sit amet. Integer molestie faucibus cursus. Maecenas et magna vehicula, accumsan erat eget, facilisis sem. Nulla sed nisl ac orci aliquet bibendum. Morbi ac tristique nulla. Nam tincidunt odio sit amet ipsum elementum, et luctus arcu tempor. Nullam ultricies velit elit, eu ultricies dui scelerisque vitae. Cras consequat consectetur vestibulum.</p>
+{% endblock %}
