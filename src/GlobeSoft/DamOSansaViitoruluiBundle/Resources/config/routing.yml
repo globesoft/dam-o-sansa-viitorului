@@ -2,6 +2,10 @@ homepage:
     path: /home
     defaults: { _controller: DamOSansaBundle:Content:home }
 
+partners:
+    path: /partners
+    defaults: { _controller: DamOSansaBundle:Content:partners }
+
 therapy:
     path: /therapy/{type}
     defaults: { _controller: DamOSansaBundle:Content:therapy, type: "all" }

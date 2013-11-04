@@ -129,3 +129,11 @@ body {
 .page-content img {
     margin: 1em 0;
 }
+
+.listing-with-thumbnail h3 {
+    padding-top: 20px;
+}
+
+.listing-with-thumbnail img {
+    margin-right: 1em;
+}
