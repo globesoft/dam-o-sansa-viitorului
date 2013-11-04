@@ -6,6 +6,10 @@ partners:
     path: /partners
     defaults: { _controller: DamOSansaBundle:Content:partners }
 
+contact:
+    path: /contact
+    defaults: { _controller: DamOSansaBundle:Content:contact }
+
 therapy:
     path: /therapy/{type}
     defaults: { _controller: DamOSansaBundle:Content:therapy, type: "all" }

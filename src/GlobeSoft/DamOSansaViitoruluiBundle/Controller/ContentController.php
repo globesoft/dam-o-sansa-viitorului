@@ -15,6 +15,10 @@ class ContentController extends Controller {
         return $this->render('@DamOSansa/Content/partners.html.twig');
     }
 
+    public function contactAction() {
+        return $this->render('@DamOSansa/Content/contact.html.twig');
+    }
+
     /**
      * List all types of available therapy or provide more information about a single one.
      * @param string $type The therapy type that more information should be provided on.
