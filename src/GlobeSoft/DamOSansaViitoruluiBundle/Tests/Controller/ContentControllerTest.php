@@ -26,6 +26,8 @@ class ContentControllerTest extends WebTestCase {
             '/home' => 'Acasă',
             '/therapy' => 'Terapie',
             '/therapy/aba' => 'Terapie Aba',
+            '/dissability' => 'Dizabilități',
+            '/dissability/autism' => 'Autism'
         );
 
         foreach ($pagesToCheck as $pageRoute => $expectedTitle) {

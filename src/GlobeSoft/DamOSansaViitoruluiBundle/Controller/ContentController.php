@@ -27,4 +27,21 @@ class ContentController extends Controller {
             ));
         }
     }
+
+    /**
+     * List all types of dissabilities that the centre manages or provides more information about a particular type.
+     * @param string $type The dissability type that more information should be provided on.
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function dissabilityAction($type = 'all') {
+        if ($type == 'all') {
+            return $this->render('@DamOSansa/Dissability/list.html.twig');
+        } else {
+            $type = ucfirst(str_replace('-',' ', $type));
+
+            return $this->render('@DamOSansa/Dissability/item.html.twig', array(
+                'type' => $type
+            ));
+        }
+    }
 }

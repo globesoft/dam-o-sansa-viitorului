@@ -6,6 +6,10 @@ therapy:
     path: /therapy/{type}
     defaults: { _controller: DamOSansaBundle:Content:therapy, type: "all" }
 
+dissability:
+    path: /dissability/{type}
+    defaults: { _controller: DamOSansaBundle:Content:dissability, type: "all" }
+
 default:
     path: /
     defaults: { _controller: DamOSansaBundle:Content:home }
