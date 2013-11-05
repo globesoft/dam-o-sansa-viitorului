@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/craue/CraueFormFlowBundle.git",
-                "reference": "fa7989d55d94875de5fb51dbf0c8fc3e5042ebd9"
+                "reference": "d63294fa6d2d9e0139d31cd15d0c5ce5a61ad697"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craue/CraueFormFlowBundle/zipball/fa7989d55d94875de5fb51dbf0c8fc3e5042ebd9",
-                "reference": "fa7989d55d94875de5fb51dbf0c8fc3e5042ebd9",
+                "url": "https://api.github.com/repos/craue/CraueFormFlowBundle/zipball/d63294fa6d2d9e0139d31cd15d0c5ce5a61ad697",
+                "reference": "d63294fa6d2d9e0139d31cd15d0c5ce5a61ad697",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "Symfony2",
                 "form"
             ],
-            "time": "2013-10-27 09:31:24"
+            "time": "2013-11-04 21:42:38"
         },
         {
             "name": "doctrine/annotations",
@@ -1404,12 +1404,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapBundle.git",
-                "reference": "b145c5d09de48de49f86faa906d1df7ca1a443b3"
+                "reference": "aba6039f3e1ec48f4f943fdbdcc30e0b67a62294"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/b145c5d09de48de49f86faa906d1df7ca1a443b3",
-                "reference": "b145c5d09de48de49f86faa906d1df7ca1a443b3",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/aba6039f3e1ec48f4f943fdbdcc30e0b67a62294",
+                "reference": "aba6039f3e1ec48f4f943fdbdcc30e0b67a62294",
                 "shasum": ""
             },
             "require": {
@@ -1461,7 +1461,7 @@
                 "form",
                 "template"
             ],
-            "time": "2013-10-31 16:15:54"
+            "time": "2013-11-04 22:09:47"
         },
         {
             "name": "mopa/composer-bridge",
@@ -2149,12 +2149,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "df3b44f27a25d72895adf5755bf5fef4eb02ea67"
+                "reference": "13b96677bacf3de360a762d11ad0e0007f0710da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/df3b44f27a25d72895adf5755bf5fef4eb02ea67",
-                "reference": "df3b44f27a25d72895adf5755bf5fef4eb02ea67",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/13b96677bacf3de360a762d11ad0e0007f0710da",
+                "reference": "13b96677bacf3de360a762d11ad0e0007f0710da",
                 "shasum": ""
             },
             "type": "library",
@@ -2178,7 +2178,7 @@
                 "bootstrap",
                 "css"
             ],
-            "time": "2013-11-03 03:11:08"
+            "time": "2013-11-04 19:24:32"
         },
         {
             "name": "twig/extensions",
