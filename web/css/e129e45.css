@@ -1,9 +1,9 @@
-.footer {
-  border-top: 1px solid #eee;
-  margin-top: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
+/*
+Copyright Petre Pătrașc 2013
+
+Colour theme available at:
+https://kuler.adobe.com/vintage-card-color-theme-3064728/
+*/
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
@@ -85,9 +85,6 @@
     padding-right: 0;
   }
 }
-.project-icon {
-  height: 30px;
-}
 .header-images {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -111,6 +108,9 @@
   padding-bottom: 0.5em;
   margin: 0.5em 0 1em;
 }
+.project-icon {
+  height: 30px;
+}
 .page-content {
   padding: 1em 0;
 }
@@ -122,4 +122,10 @@
 }
 .listing-with-thumbnail img {
   margin-right: 1em;
+}
+.footer {
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
