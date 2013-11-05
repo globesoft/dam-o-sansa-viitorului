@@ -2,10 +2,13 @@
 
 {% block head_style %}
     {{ parent() }}
-
-    <link href="{{ asset("bundles/mopabootstrap/bootstrap/dist/css/bootstrap.css") }}" type="text/css" rel="stylesheet" media="screen" />
-    <link href="{{ asset("bundles/mopabootstrap/bootstrap/dist/css/bootstrap.min.css") }}" type="text/css" rel="stylesheet" media="screen" />
-    <link href="{{ asset("css/application.css") }}" type="text/css" rel="stylesheet" media="screen" />
+    {% stylesheets
+        '@MopaBootstrapBundle/Resources/public/bootstrap/dist/css/bootstrap.css'
+        '@MopaBootstrapBundle/Resources/public/bootstrap/dist/css/bootstrap-theme.min.css'
+        '@DamOSansaBundle/Resources/public/css/application.less'
+    %}
+    <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
+    {% endstylesheets %}
 {% endblock %}
 {% block title %}Asociația Dăm o Șansă Viitorului{% endblock %}
 
