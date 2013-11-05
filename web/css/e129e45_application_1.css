@@ -2,7 +2,7 @@
 Copyright Petre Pătrașc 2013
 
 Colour theme available at:
-https://kuler.adobe.com/vintage-card-color-theme-3064728/
+https://kuler.adobe.com/beer-color-theme-3112834/
 */
 /* Main marketing message and sign up button */
 .jumbotron {
@@ -89,33 +89,51 @@ https://kuler.adobe.com/vintage-card-color-theme-3064728/
   margin-top: 1em;
   margin-bottom: 1em;
 }
+.nav {
+  font-size: 14px;
+  margin-top: 18px;
+}
+.nav a {
+  color: #37324a;
+  font-weight: bold;
+}
+.navigator {
+  border-top: 1px solid #c9c9c9;
+  border-bottom: 1px solid #c9c9c9;
+  background: #eee;
+  padding: 18px 0 0;
+}
+.navigator .page-title {
+  color: #235e5b;
+  font-size: 150%;
+  font-weight: bold;
+  position: relative;
+  top: 10px;
+  text-shadow: 1px 1px #fff;
+}
 .sidebar {
-  padding: 0;
-  margin: 0;
+  border-left: 1px solid #c9c9c9;
+  font-size: 120%;
+  padding-left: 3em;
 }
 .sidebar-item {
-  border: 1px solid #c9c9c9;
-  background-color: #eee;
-  margin-top: 1em;
+  margin: 3em 0 3em;
 }
 .sidebar-item a {
+  color: #667;
   display: block;
-  font-size: 120%;
   margin-bottom: 1em;
 }
-.sidebar-item h3 {
-  border-bottom: 1px solid #c9c9c9;
-  padding-bottom: 0.5em;
-  margin: 0.5em 0 1em;
+.sidebar-item h4 {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .project-icon {
   height: 30px;
 }
 .page-content {
-  padding: 1em 0;
-}
-.page-content img {
-  margin: 1em 0;
+  font-size: 140%;
+  padding: 2em 0;
 }
 .listing-with-thumbnail h3 {
   padding-top: 20px;
@@ -124,8 +142,23 @@ https://kuler.adobe.com/vintage-card-color-theme-3064728/
   margin-right: 1em;
 }
 .footer {
-  border-top: 1px solid #eee;
+  background-color: #f8db9a;
+  font-weight: bold;
+  border-top: 1px solid #c9c9c9;
   margin-top: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+body {
+  color: #333;
+  font: 15px/1.65em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #933c60;
+}
+.breadcrumb {
+  border: 1px solid #c9c9c9;
+}
+.navigator {
+  background-color: #f8db9a;
 }

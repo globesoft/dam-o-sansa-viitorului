@@ -8,15 +8,21 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class ContentController extends Controller {
 
     public function homeAction() {
-        return $this->render('@DamOSansa/Content/home.html.twig');
+        return $this->render('@DamOSansa/Content/home.html.twig', array(
+            'pageTitle' => 'Acasă'
+        ));
     }
 
     public function partnersAction() {
-        return $this->render('@DamOSansa/Content/partners.html.twig');
+        return $this->render('@DamOSansa/Content/partners.html.twig', array(
+            'pageTitle' => 'Parteneri'
+        ));
     }
 
     public function contactAction() {
-        return $this->render('@DamOSansa/Content/contact.html.twig');
+        return $this->render('@DamOSansa/Content/contact.html.twig', array(
+            'pageTitle' => 'Contact'
+        ));
     }
 
     /**
@@ -26,12 +32,15 @@ class ContentController extends Controller {
      */
     public function therapyAction($type = 'all') {
         if ($type == 'all') {
-            return $this->render('@DamOSansa/Therapy/list.html.twig');
+            return $this->render('@DamOSansa/Therapy/list.html.twig', array(
+                'pageTitle' => 'Terapie'
+            ));
         } else {
             $type = ucfirst(str_replace('-',' ', $type));
 
             return $this->render('@DamOSansa/Therapy/item.html.twig', array(
-                'type' => $type
+                'type' => $type,
+                'pageTitle' => 'Terapie ' . $type
             ));
         }
     }
@@ -43,12 +52,15 @@ class ContentController extends Controller {
      */
     public function dissabilityAction($type = 'all') {
         if ($type == 'all') {
-            return $this->render('@DamOSansa/Dissability/list.html.twig');
+            return $this->render('@DamOSansa/Dissability/list.html.twig', array(
+                'pageTitle' => 'Dizabilități'
+            ));
         } else {
             $type = ucfirst(str_replace('-',' ', $type));
 
             return $this->render('@DamOSansa/Dissability/item.html.twig', array(
-                'type' => $type
+                'type' => $type,
+                'pageTitle' => $type
             ));
         }
     }

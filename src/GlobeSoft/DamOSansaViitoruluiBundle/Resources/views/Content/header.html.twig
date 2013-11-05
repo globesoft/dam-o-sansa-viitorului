@@ -1,22 +1,18 @@
 {% block header %}
-<div class="masthead">
-    <div class="row header-images">
-        <a href="{{ path('homepage') }}"><img class="col-md-8 img-responsive" src="{{ asset('images/logo.svg') }}"></a>
-        <img class="col-md-4 img-responsive img-rounded" src="http://placehold.it/350x120">
+<div class="container">
+    <div class="masthead">
+        <div class="row header-images">
+            <a href="{{ path('homepage') }}"><img class="col-lg-5 col-md-8 img-responsive logo" src="{{ asset('images/logo.svg') }}"></a>
 
-        {#<div class="clearfix"></div>#}
-    </div>
-
-    {% set currentPath = path(app.request.attributes.get('_route')) %}
-
-    <div class="row">
-        <ul class="nav nav-justified">
-            <li {% if 'home' in currentPath %} class="active" {% endif %}><a href="{{ path('homepage') }}"><i class="glyphicon glyphicon-home"></i> Acasă</a></li>
-            <li {% if 'therapy' in currentPath %} class="active" {% endif %}><a href="{{ path('therapy') }}"><i class="glyphicon glyphicon-briefcase"></i> Terapie</a></li>
-            <li {% if 'dissability' in currentPath %} class="active" {% endif %}><a href="{{ path('dissability') }}"><i class="glyphicon glyphicon-user"></i> Dizabilități</a></li>
-            <li {% if 'partners' in currentPath %} class="active" {% endif %}><a href="{{ path('partners') }}"><i class="glyphicon glyphicon-globe"></i> Parteneri</a></li>
-            <li {% if 'contact' in currentPath %} class="active" {% endif %}><a href="{{ path('contact') }}"><i class="glyphicon glyphicon-envelope"></i> Contact</a></li>
-        </ul>
+            {% set currentPath = path(app.request.attributes.get('_route')) %}
+            <ul class="nav nav-tabs col-lg-6 col-lg-push-1 col-md-12 col-md-push-1 col-sm-push-1">
+                <li {% if 'home' in currentPath %} class="active" {% endif %}><a href="{{ path('homepage') }}"><i class="glyphicon glyphicon-home"></i> Acasă</a></li>
+                <li {% if 'therapy' in currentPath %} class="active" {% endif %}><a href="{{ path('therapy') }}"><i class="glyphicon glyphicon-briefcase"></i> Terapie</a></li>
+                <li {% if 'dissability' in currentPath %} class="active" {% endif %}><a href="{{ path('dissability') }}"><i class="glyphicon glyphicon-user"></i> Dizabilități</a></li>
+                <li {% if 'partners' in currentPath %} class="active" {% endif %}><a href="{{ path('partners') }}"><i class="glyphicon glyphicon-globe"></i> Parteneri</a></li>
+                <li {% if 'contact' in currentPath %} class="active" {% endif %}><a href="{{ path('contact') }}"><i class="glyphicon glyphicon-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
     </div>
 </div>
 {% endblock %}

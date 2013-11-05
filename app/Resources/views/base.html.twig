@@ -12,18 +12,18 @@
     <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
     {% endstylesheets %}
 {% endblock %}
-{% block title %}Asociația Dăm o Șansă Viitorului{% endblock %}
+{% block title %}{{ pageTitle }} | Asociația Dăm o Șansă Viitorului{% endblock %}
 
 {% block body %}
-<div class="container">
     {% include '@DamOSansa/Content/header.html.twig' %}
+    {% include '@DamOSansa/Content/_navigator.html.twig' %}
 
-    <div class="row">
-        <div class="col-md-8 page-content">{% block content %}{% endblock %}</div>
-        <div class="col-md-3 text-center col-md-push-1 sidebar" role="navigation">{% include '@DamOSansa/Content/sidebar.html.twig' %}</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 page-content">{% block content %}{% endblock %}</div>
+            <div class="col-md-3 col-md-push-1 sidebar" role="navigation">{% include '@DamOSansa/Content/sidebar.html.twig' %}</div>
+        </div>
     </div>
 
     {% include '@DamOSansa/Content/footer.html.twig' %}
-
-</div> <!-- /container -->
 {% endblock %}
