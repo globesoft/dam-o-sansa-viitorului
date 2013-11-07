@@ -146,6 +146,28 @@ https://kuler.adobe.com/beer-color-theme-3112834/
   font-size: 140%;
   padding: 2em 0;
 }
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4 {
+  margin-bottom: 1em;
+}
+.page-content hr {
+  margin: 2em 0;
+}
+.page-content p {
+  margin-left: 10px;
+  word-spacing: 1.3px;
+}
+.page-content .breadcrumb {
+  display: none;
+}
+.page-content img {
+  margin: 1em 0;
+}
+.page-content .btn-lg {
+  margin-top: 1em;
+}
 .listing-with-thumbnail h3 {
   padding-top: 20px;
 }
