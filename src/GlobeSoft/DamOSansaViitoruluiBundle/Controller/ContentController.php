@@ -9,7 +9,7 @@ class ContentController extends Controller {
 
     public function homeAction() {
         return $this->render('@DamOSansa/Content/home.html.twig', array(
-            'pageTitle' => 'Acasă'
+            'pageTitle' => 'Asociația Dăm o Șansă Viitorului'
         ));
     }
 
