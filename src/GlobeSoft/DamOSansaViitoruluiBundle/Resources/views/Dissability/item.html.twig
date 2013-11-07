@@ -1,4 +1,6 @@
 {% extends '::base.html.twig' %}
+{% block title %}{{ type|title }} | {{ parent() }}{% endblock %}
+
 
 {% block content %}
     <ol class="breadcrumb">

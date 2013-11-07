@@ -1,5 +1,7 @@
 {% extends '::base.html.twig' %}
 
+{% block title %}Terapie {{ type }} | {{ parent() }}{% endblock %}
+
 {% block content %}
     <ol class="breadcrumb">
         <li><a href="{{ path('homepage') }}">Acasă</a></li>
