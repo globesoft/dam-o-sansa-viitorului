@@ -1404,12 +1404,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapBundle.git",
-                "reference": "aba6039f3e1ec48f4f943fdbdcc30e0b67a62294"
+                "reference": "9753c1ab533d4c4a741d496f11c85d17f74524b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/aba6039f3e1ec48f4f943fdbdcc30e0b67a62294",
-                "reference": "aba6039f3e1ec48f4f943fdbdcc30e0b67a62294",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/9753c1ab533d4c4a741d496f11c85d17f74524b5",
+                "reference": "9753c1ab533d4c4a741d496f11c85d17f74524b5",
                 "shasum": ""
             },
             "require": {
@@ -1461,7 +1461,7 @@
                 "form",
                 "template"
             ],
-            "time": "2013-11-04 22:09:47"
+            "time": "2013-11-07 12:57:49"
         },
         {
             "name": "mopa/composer-bridge",
@@ -2149,15 +2149,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "13b96677bacf3de360a762d11ad0e0007f0710da"
+                "reference": "463343af63344dbbc3db04f40b0b804baa919b7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/13b96677bacf3de360a762d11ad0e0007f0710da",
-                "reference": "13b96677bacf3de360a762d11ad0e0007f0710da",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/463343af63344dbbc3db04f40b0b804baa919b7e",
+                "reference": "463343af63344dbbc3db04f40b0b804baa919b7e",
                 "shasum": ""
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
@@ -2178,7 +2183,7 @@
                 "bootstrap",
                 "css"
             ],
-            "time": "2013-11-04 19:24:32"
+            "time": "2013-11-07 02:38:27"
         },
         {
             "name": "twig/extensions",
