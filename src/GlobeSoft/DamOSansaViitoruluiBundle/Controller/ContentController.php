@@ -7,14 +7,26 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class ContentController extends Controller {
 
+    /**
+     * Homepage display action.
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function homeAction() {
         return $this->render('@DamOSansa/Content/home.html.twig');
     }
 
+    /**
+     * Partners display action.
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function partnersAction() {
         return $this->render('@DamOSansa/Content/partners.html.twig');
     }
 
+    /**
+     * Display contact action .
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function contactAction() {
         return $this->render('@DamOSansa/Content/contact.html.twig');
     }

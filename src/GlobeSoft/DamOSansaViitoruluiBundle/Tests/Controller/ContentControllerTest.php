@@ -27,7 +27,7 @@ class ContentControllerTest extends WebTestCase {
             '/terapie' => 'Terapie',
             '/terapie/aba' => 'Terapie Aba',
             '/dizabilitati' => 'Dizabilități',
-            '/dizabilitati/autism' => 'Autism',
+            '/dizabilitati/tulburari-pervazive-de-dezvoltare' => 'Tulburari pervazive de dezvoltare',
             '/parteneri' => 'Parteneri',
             '/Contact' => 'Contact'
         );
