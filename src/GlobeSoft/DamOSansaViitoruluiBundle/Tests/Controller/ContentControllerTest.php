@@ -9,7 +9,7 @@ class ContentControllerTest extends WebTestCase {
 
     public function testProjectTitleIsSet() {
         $client = static::createClient();
-        $crawler = $client->request('GET', '/home');
+        $crawler = $client->request('GET', '/acasa');
 
         $this->assertGreaterThan(
             0,
@@ -20,15 +20,15 @@ class ContentControllerTest extends WebTestCase {
 
     public function testAllStaticPagesAreAccessible() {
         $client = static::createClient();
-        $crawler = $client->request('GET', '/home');
+        $crawler = $client->request('GET', '/acasa');
 
         $pagesToCheck = array(
-            '/home' => 'Acasă',
-            '/therapy' => 'Terapie',
-            '/therapy/aba' => 'Terapie Aba',
-            '/dissability' => 'Dizabilități',
-            '/dissability/autism' => 'Autism',
-            '/partners' => 'Parteneri',
+            '/acasa' => 'Acasă',
+            '/terapie' => 'Terapie',
+            '/terapie/aba' => 'Terapie Aba',
+            '/dizabilitati' => 'Dizabilități',
+            '/dizabilitati/autism' => 'Autism',
+            '/parteneri' => 'Parteneri',
             '/Contact' => 'Contact'
         );
 

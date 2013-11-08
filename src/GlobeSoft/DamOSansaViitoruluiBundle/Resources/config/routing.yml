@@ -1,9 +1,9 @@
 homepage:
-    path: /home
+    path: /acasa
     defaults: { _controller: DamOSansaBundle:Content:home }
 
 partners:
-    path: /partners
+    path: /parteneri
     defaults: { _controller: DamOSansaBundle:Content:partners }
 
 contact:
@@ -11,11 +11,11 @@ contact:
     defaults: { _controller: DamOSansaBundle:Content:contact }
 
 therapy:
-    path: /therapy/{type}
+    path: /terapie/{type}
     defaults: { _controller: DamOSansaBundle:Content:therapy, type: "all" }
 
 dissability:
-    path: /dissability/{type}
+    path: /dizabilitati/{type}
     defaults: { _controller: DamOSansaBundle:Content:dissability, type: "all" }
 
 default:
