@@ -5,40 +5,78 @@
 {% block content %}
     <h1>Tipuri de dizabilități</h1>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam asperiores ipsa ipsam maiores nam nesciunt odit praesentium quod repellat, similique veniam? Atque cupiditate iure, provident quaerat unde veniam voluptatum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae illum velit? Consequuntur ducimus et fugit, hic provident ratione temporibus vel. Distinctio esse eveniet minima nulla perferendis porro repellendus, rerum?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae illum velit? Consequuntur ducimus et fugit, hic provident ratione temporibus vel. Distinctio esse eveniet minima nulla perferendis porro repellendus, rerum?</p>
+    <img class="img-responsive img-thumbnail" src="{{ asset('bundles/damosansa/images/dissability-image.jpg') }}">
 
-    <img class="img-responsive img-thumbnail" src="http://placehold.it/960x441">
+    <h2><a href="{{ path('dissability', {'type' : 'tulburari-pervazive-de-dezvoltare'}) }}">Tulburări pervazive de dezvoltare</a></h2>
 
-    <h2><a href="{{ path('dissability', {'type' : 'exemplu-1'}) }}">Dizabilitate Exemplu 1</a></h2>
-
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at vestibulum elit. Duis convallis mi ullamcorper, luctus neque et, porta nulla. Sed turpis neque, fermentum in accumsan mattis, imperdiet sed nisi. Sed molestie sit amet nisl eget varius. Aenean aliquam nisi id ante interdum, id convallis nulla posuere. Curabitur pretium nisl id lacus pretium auctor. Suspendisse a dolor tellus.</p>
-    <p>Aenean lobortis ut augue non congue. Quisque lobortis vulputate enim, sed tincidunt diam facilisis vel. Phasellus et quam ultrices, iaculis felis quis, consectetur sem. Sed tempor et ligula non tristique. Nullam varius mi ipsum, eget venenatis tellus auctor viverra. Donec et vestibulum risus, sit amet dapibus nulla. Ut ut justo et quam tristique fringilla. Nam id lacus dapibus, porttitor arcu non, venenatis lacus. Nunc ut ante rutrum, egestas metus sit amet, ullamcorper lorem. In justo justo, aliquam malesuada mauris non, rhoncus commodo justo. Duis sit amet felis ipsum. Integer purus magna, interdum rhoncus adipiscing at, varius sit amet tortor. Sed et mollis lorem. Vivamus a blandit risus. Morbi vestibulum consectetur augue vitae pharetra.</p>
+    <p>Tulburările pervazive de dezvoltare au origine bio-chimică sau sunt asociate cu probleme genetice. Conceptul de tulburare pervazivă cuprinde definiția unei combinații de dificultăți de dezvoltare a comunicării, inteligenței sociale și a imaginației - ceea ce înseamnă că mesajele transmise la creier sunt prost receptate și interpretate, existând o ruptură între senzație și percepție. Această gamă de dizabilități încadrează: Tulburarea de tip autist, Sindromul Asperger, Tulburarea Dezintegrativa a Copilariei, Sindromul Rett, Tulburarea Globala (Pervaziva) de Dezvoltare – inclusiv autismul atipic.</p>
 
     <div class="text-center">
-        <a href="{{ path('dissability', {'type' : 'exemplu-1'}) }}" class="btn btn-info btn-lg">Citește mai multe despre Exemplu 1</a>
+        <a href="{{ path('dissability', {'type' : 'tulburari-pervazive-de-dezvoltare'}) }}" class="btn btn-info btn-lg">Citește mai multe despre Tulburări pervazive de dezvoltare</a>
     </div>
 
     <hr>
 
-    <h2><a href="{{ path('dissability', {'type' : 'exemplu-2'}) }}">Dizabilitate Exemplu 2</a></h2>
+    <h2><a href="{{ path('dissability', {'type' : 'tulburari-de-limbaj'}) }}">Tulburări de limbaj</a></h2>
 
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at vestibulum elit. Duis convallis mi ullamcorper, luctus neque et, porta nulla. Sed turpis neque, fermentum in accumsan mattis, imperdiet sed nisi. Sed molestie sit amet nisl eget varius. Aenean aliquam nisi id ante interdum, id convallis nulla posuere. Curabitur pretium nisl id lacus pretium auctor. Suspendisse a dolor tellus.</p>
-    <p>Aenean lobortis ut augue non congue. Quisque lobortis vulputate enim, sed tincidunt diam facilisis vel. Phasellus et quam ultrices, iaculis felis quis, consectetur sem. Sed tempor et ligula non tristique. Nullam varius mi ipsum, eget venenatis tellus auctor viverra. Donec et vestibulum risus, sit amet dapibus nulla. Ut ut justo et quam tristique fringilla. Nam id lacus dapibus, porttitor arcu non, venenatis lacus. Nunc ut ante rutrum, egestas metus sit amet, ullamcorper lorem. In justo justo, aliquam malesuada mauris non, rhoncus commodo justo. Duis sit amet felis ipsum. Integer purus magna, interdum rhoncus adipiscing at, varius sit amet tortor. Sed et mollis lorem. Vivamus a blandit risus. Morbi vestibulum consectetur augue vitae pharetra.</p>
+    <p>Clasificarea tulburărilor de limbaj:</p>
+
+    <ul>
+        <li>Tulburări de pronunție: dislalie, rinolalie, dizartrie;</li>
+        <li>Tulburări de ritm și fluență a vorbirii: bâlbâiala, tahilalia, bradilalia, logonevroza;</li>
+        <li>Tulburări de voce: afonia, disfonia, fonastenia;</li>
+        <li>Tulburări ale limbajului citit-scris: dislexia, alexia, disgrafia, agrafia;</li>
+        <li>Tulburări polimorfe: afazia, alalia;</li>
+        <li>Tulburări de dezvoltare a limbajului: mutism patogen, electiv, voluntar, întârzierea în dezvoltarea generală a vorbirii;</li>
+        <li>Tulburări ale limbajului bazate pe disfuncții psihice: dislogii, ecolalii, jargonofazii, bradifazii.</li>
+    </ul>
+
 
     <div class="text-center">
-        <a href="{{ path('dissability', {'type' : 'exemplu-2'}) }}" class="btn btn-info btn-lg">Citește mai multe despre Exemplu 2</a>
+        <a href="{{ path('dissability', {'type' : 'tulburari-de-limbaj'}) }}" class="btn btn-info btn-lg">Citește mai multe despre Tulburări de limbaj</a>
     </div>
 
     <hr>
 
-    <h2><a href="{{ path('dissability', {'type' : 'exemplu-3'}) }}">Dizabilitate Exemplu 3</a></h2>
+    <h2><a href="{{ path('dissability', {'type' : 'deficiente-de-intelect'}) }}">Deficiente de intelect</a></h2>
 
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at vestibulum elit. Duis convallis mi ullamcorper, luctus neque et, porta nulla. Sed turpis neque, fermentum in accumsan mattis, imperdiet sed nisi. Sed molestie sit amet nisl eget varius. Aenean aliquam nisi id ante interdum, id convallis nulla posuere. Curabitur pretium nisl id lacus pretium auctor. Suspendisse a dolor tellus.</p>
-    <p>Aenean lobortis ut augue non congue. Quisque lobortis vulputate enim, sed tincidunt diam facilisis vel. Phasellus et quam ultrices, iaculis felis quis, consectetur sem. Sed tempor et ligula non tristique. Nullam varius mi ipsum, eget venenatis tellus auctor viverra. Donec et vestibulum risus, sit amet dapibus nulla. Ut ut justo et quam tristique fringilla. Nam id lacus dapibus, porttitor arcu non, venenatis lacus. Nunc ut ante rutrum, egestas metus sit amet, ullamcorper lorem. In justo justo, aliquam malesuada mauris non, rhoncus commodo justo. Duis sit amet felis ipsum. Integer purus magna, interdum rhoncus adipiscing at, varius sit amet tortor. Sed et mollis lorem. Vivamus a blandit risus. Morbi vestibulum consectetur augue vitae pharetra.</p>
+    <p>Deficiența de intelect poate fi definită prin carențe ale capacităților psihice cognitive, mnezice, adaptative, de comunicare. Această reducere a mecanismelor de adaptare ale individului poate conduce la o incapacitate de a face față cerințelor mediului înconjurător, aflat în permanentă schimbare și o situare a persoanei într-o situație dificilă în care are nevoie de ajutor pentru dezvoltarea competențelor personale, sociale și profesionale și de asemenea pentru structurarea, organizarea și dezvoltarea intelectuală, afectivă, psihomotorie și adaptativ-comportamentală.</p>
 
     <div class="text-center">
-        <a href="{{ path('dissability', {'type' : 'exemplu-3'}) }}" class="btn btn-info btn-lg">Citește mai multe despre Exemplu 3</a>
+        <a href="{{ path('dissability', {'type' : 'deficiente-de-intelect'}) }}" class="btn btn-info btn-lg">Citește mai multe despre Deficiente de intelect</a>
     </div>
+
+    <hr>
+
+    <h2><a href="{{ path('dissability', {'type' : 'sindromul-down'}) }}">Sindromul Down</a></h2>
+
+    <p>Sindromul  Down este o boală genetică ce presupune o modificare la nivel cromozomial care se manifestă prin:</p>
+
+    <ul>
+        <li>Tonus muscular scăzut</li>
+        <li>Aspect fizic specific: cap mic, rotund, aplatizat; dinți implantați neregulat, inegali; gât scurt, torace lărgit, mâini mici, degete scurte și divergente; picioare scurte, plate</li>
+        <li>Ferecvente malformații congenitale precum cele cardiace, disfuncții alimentare</li>
+        <li>Diverse grade de deficiență mintală</li>
+        <li>Dezvoltare psihomotorie întârziată</li>
+        <li>Atenție labilă</li>
+        <li>Memoria preponderent mecanică</li>
+        <li>Dezvoltarea limbajului întârziată</li>
+    </ul>
+
+    <div class="text-center">
+        <a href="{{ path('dissability', {'type' : 'sindromul-down'}) }}" class="btn btn-info btn-lg">Citește mai multe despre Sindromul Down</a>
+    </div>
+
+    <hr>
+
+    <h2><a href="{{ path('dissability', {'type' : 'tulburari-de-comportament'}) }}">Tulburările de comportament</a></h2>
+
+    <p>Tulburările de comportament sunt în general definite ca fiind abateri de la normele pe care le promovează o anumită societate. Comportamentul inadecvat poate apărea la toate vârstele și poate avea o varietate de cauze în funcție de tipul de personalitate, de educație, ereditate și de mediul în care a crescut individul. De asemenea pot fi și determinanți de natură organică ai unui comportament deviant.</p>
+
+    <div class="text-center">
+        <a href="{{ path('dissability', {'type' : 'tulburari-de-comportament'}) }}" class="btn btn-info btn-lg">Citește mai multe despre Tulburările de comportament</a>
+    </div>
+
+    <hr>
+
 {% endblock %}

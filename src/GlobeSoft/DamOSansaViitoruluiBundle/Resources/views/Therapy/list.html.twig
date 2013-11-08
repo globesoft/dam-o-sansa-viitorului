@@ -5,40 +5,72 @@
 {% block content %}
     <h1>Tipuri de terapie</h1>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam asperiores ipsa ipsam maiores nam nesciunt odit praesentium quod repellat, similique veniam? Atque cupiditate iure, provident quaerat unde veniam voluptatum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae illum velit? Consequuntur ducimus et fugit, hic provident ratione temporibus vel. Distinctio esse eveniet minima nulla perferendis porro repellendus, rerum?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae illum velit? Consequuntur ducimus et fugit, hic provident ratione temporibus vel. Distinctio esse eveniet minima nulla perferendis porro repellendus, rerum?</p>
+    <img class="img-responsive img-thumbnail" src="{{ asset('bundles/damosansa/images/therapy-image.jpg') }}">
 
-    <img class="img-responsive img-thumbnail" src="http://placehold.it/960x441">
+    <h2><a href="{{ path('therapy', {'type' : 'aba'}) }}">Terapie ABA</a></h2>
 
-    <h2><a href="{{ path('therapy', {'type' : 'exemplu-1'}) }}">Terapie Exemplu 1</a></h2>
-
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at vestibulum elit. Duis convallis mi ullamcorper, luctus neque et, porta nulla. Sed turpis neque, fermentum in accumsan mattis, imperdiet sed nisi. Sed molestie sit amet nisl eget varius. Aenean aliquam nisi id ante interdum, id convallis nulla posuere. Curabitur pretium nisl id lacus pretium auctor. Suspendisse a dolor tellus.</p>
-    <p>Aenean lobortis ut augue non congue. Quisque lobortis vulputate enim, sed tincidunt diam facilisis vel. Phasellus et quam ultrices, iaculis felis quis, consectetur sem. Sed tempor et ligula non tristique. Nullam varius mi ipsum, eget venenatis tellus auctor viverra. Donec et vestibulum risus, sit amet dapibus nulla. Ut ut justo et quam tristique fringilla. Nam id lacus dapibus, porttitor arcu non, venenatis lacus. Nunc ut ante rutrum, egestas metus sit amet, ullamcorper lorem. In justo justo, aliquam malesuada mauris non, rhoncus commodo justo. Duis sit amet felis ipsum. Integer purus magna, interdum rhoncus adipiscing at, varius sit amet tortor. Sed et mollis lorem. Vivamus a blandit risus. Morbi vestibulum consectetur augue vitae pharetra.</p>
+    <p>ABA (Applyed behavior analysis)este o metodă de interventie bazata pe  analiză, înțelegerea şi modificare a comportamentului, care a fost creata inițial pentru tratarea autismului, principiile sale putând fi aplicate cu succes si altor tipuri de tulburări de dezvoltare.  ABA a fost subiect de cercetare şi evaluare riguroasă într-o varietate de domenii şi există numeroase studii care demonstreaza eficienţa sa ca model de predare.</p>
 
     <div class="text-center">
-        <a href="{{ path('therapy', {'type' : 'exemplu-1'}) }}" class="btn btn-info btn-lg">Citește mai multe despre terapie Exemplu 1</a>
+        <a href="{{ path('therapy', {'type' : 'aba'}) }}" class="btn btn-info btn-lg">Citește mai multe despre terapie ABA</a>
     </div>
 
     <hr>
 
-    <h2><a href="{{ path('therapy', {'type' : 'exemplu-2'}) }}">Terapie Exemplu 2</a></h2>
+    <h2><a href="{{ path('therapy', {'type' : 'teacch'}) }}">Terapie TEACCH</a></h2>
 
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at vestibulum elit. Duis convallis mi ullamcorper, luctus neque et, porta nulla. Sed turpis neque, fermentum in accumsan mattis, imperdiet sed nisi. Sed molestie sit amet nisl eget varius. Aenean aliquam nisi id ante interdum, id convallis nulla posuere. Curabitur pretium nisl id lacus pretium auctor. Suspendisse a dolor tellus.</p>
-    <p>Aenean lobortis ut augue non congue. Quisque lobortis vulputate enim, sed tincidunt diam facilisis vel. Phasellus et quam ultrices, iaculis felis quis, consectetur sem. Sed tempor et ligula non tristique. Nullam varius mi ipsum, eget venenatis tellus auctor viverra. Donec et vestibulum risus, sit amet dapibus nulla. Ut ut justo et quam tristique fringilla. Nam id lacus dapibus, porttitor arcu non, venenatis lacus. Nunc ut ante rutrum, egestas metus sit amet, ullamcorper lorem. In justo justo, aliquam malesuada mauris non, rhoncus commodo justo. Duis sit amet felis ipsum. Integer purus magna, interdum rhoncus adipiscing at, varius sit amet tortor. Sed et mollis lorem. Vivamus a blandit risus. Morbi vestibulum consectetur augue vitae pharetra.</p>
+    <p>TEACCH este o metoda de intervenție elaborată pentru a înțelege particularitățile gândirii persoanelor cu autism, a modului in care ei pot fi ajutați să se integreze în societate, pornind de la abilitățile învățării specifice fiecărui individ.</p>
 
     <div class="text-center">
-        <a href="{{ path('therapy', {'type' : 'exemplu-2'}) }}" class="btn btn-info btn-lg">Citește mai multe despre terapie Exemplu 2</a>
+        <a href="{{ path('therapy', {'type' : 'teacch'}) }}" class="btn btn-info btn-lg">Citește mai multe despre terapie TEACCH</a>
     </div>
 
     <hr>
 
-    <h2><a href="{{ path('therapy', {'type' : 'exemplu-3'}) }}">Terapie Exemplu 3</a></h2>
+    <h2><a href="{{ path('therapy', {'type' : 'give-me-five'}) }}">Terapie GIVE ME FIVE</a></h2>
 
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at vestibulum elit. Duis convallis mi ullamcorper, luctus neque et, porta nulla. Sed turpis neque, fermentum in accumsan mattis, imperdiet sed nisi. Sed molestie sit amet nisl eget varius. Aenean aliquam nisi id ante interdum, id convallis nulla posuere. Curabitur pretium nisl id lacus pretium auctor. Suspendisse a dolor tellus.</p>
-    <p>Aenean lobortis ut augue non congue. Quisque lobortis vulputate enim, sed tincidunt diam facilisis vel. Phasellus et quam ultrices, iaculis felis quis, consectetur sem. Sed tempor et ligula non tristique. Nullam varius mi ipsum, eget venenatis tellus auctor viverra. Donec et vestibulum risus, sit amet dapibus nulla. Ut ut justo et quam tristique fringilla. Nam id lacus dapibus, porttitor arcu non, venenatis lacus. Nunc ut ante rutrum, egestas metus sit amet, ullamcorper lorem. In justo justo, aliquam malesuada mauris non, rhoncus commodo justo. Duis sit amet felis ipsum. Integer purus magna, interdum rhoncus adipiscing at, varius sit amet tortor. Sed et mollis lorem. Vivamus a blandit risus. Morbi vestibulum consectetur augue vitae pharetra.</p>
+    <p>GIVE ME FIVE este o metodă de intervenție în autism care pornește de la ideea că, pentru a putea face față cerințelor mediului copilul trebuie să știe răspunsul la cinci întrebări esențiale, acestea fiind:</p>
+
+    <ul>
+        <li><strong>CE?</strong> Sarcina: tot ceea ce trebuie sa facă persoana;</li>
+        <li><strong>CUM?</strong> Modul în care trebuie îndeplinită corect sarcina;</li>
+        <li><strong>CÂND?</strong> Când începe şi când se termină sarcina;</li>
+        <li><strong>UNDE?</strong> În ce loc trebuie să se facă sarcina;</li>
+        <li><strong>CINE?</strong> El o va face?  Ce face celălalt?</li>
+    </ul>
 
     <div class="text-center">
-        <a href="{{ path('therapy', {'type' : 'exemplu-3'}) }}" class="btn btn-info btn-lg">Citește mai multe despre terapie Exemplu 3</a>
+        <a href="{{ path('therapy', {'type' : 'give-me-five'}) }}" class="btn btn-info btn-lg">Citește mai multe despre terapie GIVE ME FIVE</a>
     </div>
+
+    <hr>
+
+    <h2><a href="{{ path('therapy', {'type' : 'pecs'}) }}">Terapie PECS</a></h2>
+
+    <p>Metoda PECS (Picture Exchange Communication System-Sistemul de comunicare prin schimb de imagini) a fost elaborată pentru a potența comunicarea eficientă chiar și în cazul persoanelor nonverbale, utilizând suport vizual pentru orice tip de sarcină. Are la bază  principiile analizei comportamentale punând accent pe dezvoltarea unei interacțiuni funcționale dintre copil și mediu în ceea ce privește limbajul (oricare ar fi el: verbal sau nonverbal) și activitățile.</p>
+
+    <div class="text-center">
+        <a href="{{ path('therapy', {'type' : 'pecs'}) }}" class="btn btn-info btn-lg">Citește mai multe despre terapie PECS</a>
+    </div>
+
+    <hr>
+
+    <h2><a href="{{ path('therapy', {'type' : 'logopedie'}) }}">Logopedie</a></h2>
+
+    <p>Logopedia este o specialitate terapeutico-medicală care se ocupă de persoanele ce au dificultăți în comunicare datorate unor tulburări ale limbajului, vocii, înghițitului, auzului sau respirație. Acest tip de terapie se axează, atât în teorie cât și în practică, pe cercetarea, prevenirea, diagnosticul, terapia și reabilitarea acestui gen de dizabilități.</p>
+
+    <div class="text-center">
+        <a href="{{ path('therapy', {'type' : 'logopedie'}) }}" class="btn btn-info btn-lg">Citește mai multe despre logopedie</a>
+    </div>
+
+    <hr>
+
+    <h2><a href="{{ path('therapy', {'type' : 'terapie-de-grup'}) }}">Terapie de grup</a></h2>
+
+    <p>Terapie da grup își propune utilizarea combinată a terapiei ocupaționale, ludoterapiei, terapiei de expresie grafică și plastică și a stimulării cognitive, astfel încât participanții să acumuleze abilități dintr-o gamă largă de domenii cu scopul organizării și formării autonomiei personale și sociale.</p>
+
+    <div class="text-center">
+        <a href="{{ path('therapy', {'type' : 'terapie-de-grup'}) }}" class="btn btn-info btn-lg">Citește mai multe despre terapie de grup</a>
+    </div>
+
 {% endblock %}

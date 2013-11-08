@@ -158,6 +158,7 @@ https://kuler.adobe.com/beer-color-theme-3112834/
 .page-content p {
   margin-left: 10px;
   word-spacing: 1.3px;
+  margin-bottom: 2em;
 }
 .page-content .breadcrumb {
   display: none;
@@ -167,6 +168,12 @@ https://kuler.adobe.com/beer-color-theme-3112834/
 }
 .page-content .btn-lg {
   margin-top: 1em;
+}
+.page-content ul {
+  margin-bottom: 2em;
+}
+.page-content .subtitle img {
+  height: 220px;
 }
 .listing-with-thumbnail h3 {
   padding-top: 20px;
