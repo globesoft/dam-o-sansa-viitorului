@@ -24,7 +24,7 @@ class ContentController extends Controller {
     }
 
     /**
-     * Display contact action .
+     * Display contact action  .
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function contactAction() {
