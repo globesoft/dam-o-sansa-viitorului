@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/craue/CraueFormFlowBundle.git",
-                "reference": "d63294fa6d2d9e0139d31cd15d0c5ce5a61ad697"
+                "reference": "f22aaef47213ddc503370808d4d8dbebe69a0077"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craue/CraueFormFlowBundle/zipball/d63294fa6d2d9e0139d31cd15d0c5ce5a61ad697",
-                "reference": "d63294fa6d2d9e0139d31cd15d0c5ce5a61ad697",
+                "url": "https://api.github.com/repos/craue/CraueFormFlowBundle/zipball/f22aaef47213ddc503370808d4d8dbebe69a0077",
+                "reference": "f22aaef47213ddc503370808d4d8dbebe69a0077",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "Symfony2",
                 "form"
             ],
-            "time": "2013-11-04 21:42:38"
+            "time": "2013-11-24 09:05:52"
         },
         {
             "name": "doctrine/annotations",
@@ -485,12 +485,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineMigrationsBundle.git",
-                "reference": "65bdcc9510c77c02f548e8da425826422ee4becf"
+                "reference": "10fb83cf27c23e2eff148dcbac105532ad75ce83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/65bdcc9510c77c02f548e8da425826422ee4becf",
-                "reference": "65bdcc9510c77c02f548e8da425826422ee4becf",
+                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/10fb83cf27c23e2eff148dcbac105532ad75ce83",
+                "reference": "10fb83cf27c23e2eff148dcbac105532ad75ce83",
                 "shasum": ""
             },
             "require": {
@@ -535,7 +535,7 @@
                 "migrations",
                 "schema"
             ],
-            "time": "2013-10-24 10:22:11"
+            "time": "2013-11-24 10:00:31"
         },
         {
             "name": "doctrine/inflector",
@@ -658,12 +658,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "0f5a110a1e6ae413e425912e6601643f91b069c1"
+                "reference": "37aacdae6507faad03c3df1624e7d3a6e6c1b388"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/0f5a110a1e6ae413e425912e6601643f91b069c1",
-                "reference": "0f5a110a1e6ae413e425912e6601643f91b069c1",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/37aacdae6507faad03c3df1624e7d3a6e6c1b388",
+                "reference": "37aacdae6507faad03c3df1624e7d3a6e6c1b388",
                 "shasum": ""
             },
             "require": {
@@ -710,7 +710,7 @@
                 "database",
                 "migrations"
             ],
-            "time": "2013-11-03 20:54:43"
+            "time": "2013-11-10 05:33:50"
         },
         {
             "name": "doctrine/orm",
@@ -1337,16 +1337,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "f72392d0e6eb855118f5a84e89ac2d257c704abd"
+                "reference": "6225b22de9dcf36546be3a0b2fa8e3d986153f57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f72392d0e6eb855118f5a84e89ac2d257c704abd",
-                "reference": "f72392d0e6eb855118f5a84e89ac2d257c704abd",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/6225b22de9dcf36546be3a0b2fa8e3d986153f57",
+                "reference": "6225b22de9dcf36546be3a0b2fa8e3d986153f57",
                 "shasum": ""
             },
             "require": {
@@ -1354,21 +1354,26 @@
                 "psr/log": "~1.0"
             },
             "require-dev": {
+                "aws/aws-sdk-php": "~2.4.8",
                 "doctrine/couchdb": "dev-master",
                 "mlehner/gelf-php": "1.0.*",
-                "raven/raven": "0.5.*"
+                "phpunit/phpunit": "~3.7.0",
+                "raven/raven": "0.5.*",
+                "ruflin/elastica": "0.90.*"
             },
             "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
                 "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
                 "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
                 "ext-mongo": "Allow sending log messages to a MongoDB server",
                 "mlehner/gelf-php": "Allow sending log messages to a GrayLog2 server",
-                "raven/raven": "Allow sending log messages to a Sentry server"
+                "raven/raven": "Allow sending log messages to a Sentry server",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6.x-dev"
+                    "dev-master": "1.7.x-dev"
                 }
             },
             "autoload": {
@@ -1395,7 +1400,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-07-28 22:38:30"
+            "time": "2013-11-14 19:48:31"
         },
         {
             "name": "mopa/bootstrap-bundle",
@@ -1404,12 +1409,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapBundle.git",
-                "reference": "9753c1ab533d4c4a741d496f11c85d17f74524b5"
+                "reference": "981e05137737bb4d3c4b7376b366b17b9ac4f1f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/9753c1ab533d4c4a741d496f11c85d17f74524b5",
-                "reference": "9753c1ab533d4c4a741d496f11c85d17f74524b5",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/981e05137737bb4d3c4b7376b366b17b9ac4f1f7",
+                "reference": "981e05137737bb4d3c4b7376b366b17b9ac4f1f7",
                 "shasum": ""
             },
             "require": {
@@ -1461,7 +1466,7 @@
                 "form",
                 "template"
             ],
-            "time": "2013-11-07 12:57:49"
+            "time": "2013-11-25 13:19:21"
         },
         {
             "name": "mopa/composer-bridge",
@@ -2037,16 +2042,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.3.6",
+            "version": "v2.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "d0597156c4c03ceca039f6b7770a47397ba295f0"
+                "reference": "2829b471871c2564228fe9f0832a0f928a8ffaa1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/d0597156c4c03ceca039f6b7770a47397ba295f0",
-                "reference": "d0597156c4c03ceca039f6b7770a47397ba295f0",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/2829b471871c2564228fe9f0832a0f928a8ffaa1",
+                "reference": "2829b471871c2564228fe9f0832a0f928a8ffaa1",
                 "shasum": ""
             },
             "require": {
@@ -2141,7 +2146,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-10-10 13:24:22"
+            "time": "2013-11-14 07:58:51"
         },
         {
             "name": "twbs/bootstrap",
@@ -2149,12 +2154,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "463343af63344dbbc3db04f40b0b804baa919b7e"
+                "reference": "cad664e863b50bceb5d8cc310de1ff301191422f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/463343af63344dbbc3db04f40b0b804baa919b7e",
-                "reference": "463343af63344dbbc3db04f40b0b804baa919b7e",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/cad664e863b50bceb5d8cc310de1ff301191422f",
+                "reference": "cad664e863b50bceb5d8cc310de1ff301191422f",
                 "shasum": ""
             },
             "type": "library",
@@ -2183,7 +2188,7 @@
                 "bootstrap",
                 "css"
             ],
-            "time": "2013-11-07 02:38:27"
+            "time": "2013-11-23 20:17:32"
         },
         {
             "name": "twig/extensions",
