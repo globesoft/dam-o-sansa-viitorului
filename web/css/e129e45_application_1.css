@@ -181,6 +181,12 @@ https://kuler.adobe.com/beer-color-theme-3112834/
 .listing-with-thumbnail img {
   margin-right: 1em;
 }
+.homepage .btn {
+  margin: 0;
+}
+.homepage .jumbotron {
+  padding: 0;
+}
 .footer {
   background-color: #f8db9a;
   font-weight: bold;
