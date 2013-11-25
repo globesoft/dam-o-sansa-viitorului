@@ -5,7 +5,7 @@
             <a class="col-lg-3 col-md-8 " href="{{ path('homepage') }}"><img class="img-responsive logo" src="{{ asset('images/logo-redistributable.svg') }}"></a>
 
             {% set currentPath = path(app.request.attributes.get('_route')) %}
-            <ul class="nav nav-tabs pull-right col-lg-6 col-md-12">
+            <ul class="nav nav-tabs pull-right col-lg-6">
                 <li {% if 'home' in currentPath %} class="active" {% endif %}><a href="{{ path('homepage') }}"><i class="glyphicon glyphicon-home"></i> Acasă</a></li>
                 <li {% if 'therapy' in currentPath %} class="active" {% endif %}><a href="{{ path('therapy') }}"><i class="glyphicon glyphicon-briefcase"></i> Terapie</a></li>
                 <li {% if 'dissability' in currentPath %} class="active" {% endif %}><a href="{{ path('dissability') }}"><i class="glyphicon glyphicon-user"></i> Dizabilități</a></li>

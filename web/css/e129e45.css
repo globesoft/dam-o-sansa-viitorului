@@ -90,7 +90,7 @@ https://kuler.adobe.com/beer-color-theme-3112834/
   margin-bottom: 1em;
   /* Landscape phones and down */
 }
-@media (max-width: 480px) {
+@media (max-width: 979px) {
   .header-images {
     margin: 1em auto;
   }
@@ -129,6 +129,12 @@ https://kuler.adobe.com/beer-color-theme-3112834/
 .navigator .youtube-icon {
   background-color: #CD332D;
 }
+@media (max-width: 767px) {
+  .navigator .page-title {
+    display: inline-block;
+    text-align: center;
+  }
+}
 @media (max-width: 480px) {
   .navigator .page-title {
     display: block;
@@ -146,8 +152,11 @@ https://kuler.adobe.com/beer-color-theme-3112834/
   padding-left: 3em;
   /* Landscape phones and down */
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .sidebar {
+    border-top: 1px solid #9e9e9e;
+    border-left: none;
+    margin-top: 1em;
     padding: 0 20px;
   }
 }
@@ -155,10 +164,13 @@ https://kuler.adobe.com/beer-color-theme-3112834/
   margin: 3em 0 3em;
   /* Landscape phones and down */
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .sidebar-item {
     margin: 2em 0;
     text-align: center;
+  }
+  .sidebar-item img {
+    margin: 0 auto;
   }
 }
 .sidebar-item a {
@@ -215,7 +227,10 @@ https://kuler.adobe.com/beer-color-theme-3112834/
 .page-content .text-justify {
   text-align: justify;
 }
-@media (max-width: 480px) {
+@media (max-width: 979px) {
+  .page-content {
+    padding: 0;
+  }
   .page-content h1,
   .page-content h2,
   .page-content h3,
@@ -241,7 +256,7 @@ https://kuler.adobe.com/beer-color-theme-3112834/
   padding: 0;
   /* Landscape phones and down */
 }
-@media (max-width: 480px) {
+@media (max-width: 979px) {
   .homepage .jumbotron .btn {
     position: relative;
     right: 20px;
