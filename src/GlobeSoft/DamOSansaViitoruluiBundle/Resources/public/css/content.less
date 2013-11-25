@@ -15,7 +15,7 @@
   }
 
   p {
-    margin-left: 10px;
+    margin: 0 20px;
     word-spacing: 1.3px;
     margin-bottom: 2em;
     text-indent: 2em;
@@ -52,6 +52,19 @@
   .text-justify {
     text-align: justify;
   }
+
+  /* Landscape phones and down */
+  @media (max-width: 480px) {
+    h1, h2, h3, h4 {
+      margin: 1em 20px 1em;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 0 20px;
+      width: 90%;
+    }
+  }
 }
 
 .listing-with-thumbnail {
@@ -72,5 +85,13 @@
 
   .jumbotron {
     padding: 0;
+
+    /* Landscape phones and down */
+    @media (max-width: 480px) {
+      .btn {
+        position: relative;
+        right: 20px;
+      }
+    }
   }
 }
