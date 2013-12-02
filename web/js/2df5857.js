@@ -667,21 +667,15 @@
 
   Button.prototype.toggle = function () {
     var $parent = this.$element.closest('[data-toggle="buttons"]')
-    var changed = true
 
     if ($parent.length) {
       var $input = this.$element.find('input')
-      if ($input.prop('type') === 'radio') {
-        // see if clicking on current one
-        if ($input.prop('checked') && this.$element.hasClass('active'))
-          changed = false
-        else
-          $parent.find('.active').removeClass('active')
-      }
-      if (changed) $input.prop('checked', !this.$element.hasClass('active')).trigger('change')
+        .prop('checked', !this.$element.hasClass('active'))
+        .trigger('change')
+      if ($input.prop('type') === 'radio') $parent.find('.active').removeClass('active')
     }
 
-    if (changed) this.$element.toggleClass('active')
+    this.$element.toggleClass('active')
   }
 
 
@@ -798,7 +792,7 @@
 
     if (pos > (this.$items.length - 1) || pos < 0) return
 
-    if (this.sliding)       return this.$element.one('slid.bs.carousel', function () { that.to(pos) })
+    if (this.sliding)       return this.$element.one('slid', function () { that.to(pos) })
     if (activeIndex == pos) return this.pause().cycle()
 
     return this.slide(pos > activeIndex ? 'next' : 'prev', $(this.$items[pos]))
@@ -850,7 +844,7 @@
 
     if (this.$indicators.length) {
       this.$indicators.find('.active').removeClass('active')
-      this.$element.one('slid.bs.carousel', function () {
+      this.$element.one('slid', function () {
         var $nextIndicator = $(that.$indicators.children()[that.getActiveIndex()])
         $nextIndicator && $nextIndicator.addClass('active')
       })
@@ -868,7 +862,7 @@
           $next.removeClass([type, direction].join(' ')).addClass('active')
           $active.removeClass(['active', direction].join(' '))
           that.sliding = false
-          setTimeout(function () { that.$element.trigger('slid.bs.carousel') }, 0)
+          setTimeout(function () { that.$element.trigger('slid') }, 0)
         })
         .emulateTransitionEnd(600)
     } else {
@@ -877,7 +871,7 @@
       $active.removeClass('active')
       $next.addClass('active')
       this.sliding = false
-      this.$element.trigger('slid.bs.carousel')
+      this.$element.trigger('slid')
     }
 
     isCycling && this.cycle()
@@ -1168,7 +1162,7 @@
 
     if (!isActive) {
       if ('ontouchstart' in document.documentElement && !$parent.closest('.navbar-nav').length) {
-        // if mobile we use a backdrop because click events don't delegate
+        // if mobile we we use a backdrop because click events don't delegate
         $('<div class="dropdown-backdrop"/>').insertAfter($(this)).on('click', clearMenus)
       }
 
@@ -1760,7 +1754,7 @@
         .addClass('active')
     }
 
-    active.trigger('activate.bs.scrollspy')
+    active.trigger('activate')
   }
 
 
@@ -2030,13 +2024,14 @@
         // This must work with "collections" inside "collections", and should
         // select its children, and not the "collection" inside children.
         var $collection = $('div' + this.options.collection_id);
+        var itemSelector = $collection.attr('data-widget-controls') === 'true'
+            ? 'div' + this.options.collection_id + ' > .collection-items > .collection-item'
+            : 'div' + this.options.collection_id + ' > .collection-item'
+        ;
 
         // Indexes must be different for every Collection
         if(typeof this.options.index === 'undefined') {
             this.options.index = {};
-        }
-        if(!this.options.initial_size) {
-            this.options.initial_size = $collection.find(this.selector).children().length;
         }
 
         this.options.index[this.options.collection_id] = this.options.initial_size;
@@ -2044,7 +2039,6 @@
 
     Collection.prototype = {
         constructor: Collection,
-        selector: '.collection-items:first',
         add: function () {
             // this leads to overriding items
             this.options.index[this.options.collection_id] = this.options.index[this.options.collection_id] + 1;
@@ -2059,8 +2053,8 @@
         },
         addPrototype: function(index) {
             var $collection = $(this.options.collection_id);
-            var prototype_name = $collection.data('prototype-name');
-            var prototype_label = $collection.data('prototype-label');
+            var prototype_name = $collection.attr('data-prototype-name');
+            var prototype_label = $collection.attr('data-prototype-label');
 
             // Just in case it doesnt get it
             if(typeof prototype_name === 'undefined'){
@@ -2078,13 +2072,13 @@
                 .replace(name_replace_pattern, index);
             var row = $(rowContent);
             
-            $collection.find(this.selector).append(row);
+            $collection.children('.collection-items').append(row);
             
-            $(window).triggerHandler('add.mopa-collection-item', [$collection, row])
+            $collection.triggerHandler('add.mopa-collection-item', [row]);
         },
         remove: function () {
-                if (this.$element.closest('.collection-item').length !== 0){
-                    var row = this.$element.closest('.collection-item');
+                if (this.$element.parents('.collection-item').length !== 0){
+                    var row = this.$element.parents('.collection-item');
                     row.remove();
                     $(this.options.collection_id).triggerHandler('remove.mopa-collection-item', [row]);
                 }
@@ -2106,12 +2100,13 @@
               options.collection_id = collection_id;
           }
           else if($this.closest(".form-group").attr('id')){
-              options.collection_id = '#'+$this.closest(".form-group").attr('id');
+        	  options.collection_id = '#'+$this.closest(".form-group").attr('id');
           }
           else{
-              options.collection_id = this.id.length === 0 ? '' : '#' + this.id;
+        	  options.collection_id = this.id.length === 0 ? '' : '#' + this.id;
           }
           if (!data){
+              options.initial_size = $this.parent().next('.collection-items').children().length;
               $this.data('collection', (data = new Collection(this, options)));
           }
           if (option == 'add') {
