@@ -4,7 +4,7 @@
 version: 1
 
 # default strategy is "nodelete"
-strategy: fullsync
+#strategy: fullsync
 
 # rsync exclude file:
 #   you can use a .gitignore file, however the rsync format is not 100% compatible
@@ -23,7 +23,7 @@ composer:
     #include-dev: 1
 
 # post deploy actions
-post-deploy:
+#post-deploy:
 
     # run post deploy PHP script. path is below htdocs/ and optional command line
     #   args can be added in YAML array notification
