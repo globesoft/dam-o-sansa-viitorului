@@ -1,0 +1,41 @@
+---
+
+# to assure backward compatibility on format changes, specify the version
+version: 1
+
+# default strategy is "nodelete"
+strategy: fullsync
+
+# rsync exclude file:
+#   you can use a .gitignore file, however the rsync format is not 100% compatible
+#   with the .gitignore pattern and there is a risk (use caution!)
+#excludes: my-excludes
+
+# composer settings
+composer:
+    # mode can be "trigger" (default) or "always"
+    mode: always
+
+    # method can be "update" (default) or "install"
+    method: update
+
+    # normally dev requirements are ignored (--no-dev), you can enable them:
+    #include-dev: 1
+
+# post deploy actions
+post-deploy:
+
+    # run post deploy PHP script. path is below htdocs/ and optional command line
+    #   args can be added in YAML array notification
+    #script: some-script.php
+    #args:
+    #    - arg1
+    #    - arg2
+
+    # alternatively/additionally an URL can be specified which is called after
+    #   deployment
+    #url: http://domain.tld/callback
+
+    # token which will be send as request header `X-Frbit-Token` to verify that
+    #   the request originated from this post-deploy call (defaults to "unset")
+    #token: your-own-token
